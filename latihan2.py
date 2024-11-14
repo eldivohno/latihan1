@@ -1,14 +1,14 @@
 def count_characters(s):
-        all_freq = {}
+        stringW = {}
  
         for i in s:
-            if i in all_freq:
-                all_freq[i] += 1
+            if i in stringW :
+                stringW[i] += 1
             else:
-                all_freq[i] = 1
+                stringW[i] = 1
  
-        print("Output : ", end=''+str(all_freq)+"\n")
+        print("Output : ", end=''+str(stringW)+"\n")
 
-s = str(input('Enter your string: '))
+s = str(input('Masukkan kata : '))
 
 count_characters(s)
